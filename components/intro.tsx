@@ -23,8 +23,8 @@ export default function Intro() {
             <Image
               src="/pfp.jpg"
               alt="Aravind Profile Pictore"
-              width="192"
-              height="192"
+              width="512"
+              height="512"
               quality="95"
               priority={true}
               className="h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
@@ -46,7 +46,7 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ export default function Intro() {
         in{" "}
         <span className="font-bold">Electrical and Computer Engineering</span>{" "}
         and minoring in <span className="font-bold">Robotics</span>
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
