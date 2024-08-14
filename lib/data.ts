@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import tkdImg from "@/public/tkd4.jpg";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import departureImg from "@/public/departure.jpg";
 
 export const links = [
   {
@@ -62,25 +62,18 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Lane Departure Warning System",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Developed a real-time Lane Departure Warning System using Raspberry Pi, Coral USB Accelerator, Raspberry Pi V2 Camera Module, and TensorFlow.",
+    tags: ["Python", "OpenCV", "TensorFlow", "Raspberry Pi"],
+    imageUrl: departureImg,
   },
   {
-    title: "rmtDev",
+    title: "Taekwondo Of Morganville Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Developed a full stack website for a Taekwondo school employing Django and React, with user authentication and a functional contact form.",
+    tags: ["Python", "Django", "React", "Tailwind"],
+    imageUrl: tkdImg,
   },
 ] as const;
 
