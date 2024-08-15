@@ -12,7 +12,7 @@ import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Experience() {
-    const { ref, inView } = useInView({ threshold: 0.5 });
+    const { ref, inView } = useInView({ threshold: 0.1 });
     const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
     useEffect(() => {
@@ -21,7 +21,7 @@ export default function Experience() {
         }
     }, [inView, setActiveSection, timeOfLastClick]);
     return (
-        <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+        <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
             <SectionHeading>Experience</SectionHeading>
             <VerticalTimeline lineColor="">
                 {experiencesData.map((item, index) => (

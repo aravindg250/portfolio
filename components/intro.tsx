@@ -94,14 +94,14 @@ export default function Intro() {
                     <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
                 </Link>
 
-                <a
+                {/* <a
                     className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer border border-black/10"
                     href="/Resume.pdf"
                     download={true}
                 >
                     Download Resume{" "}
                     <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-                </a>
+                </a> */}
 
                 <a
                     className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer border border-black/10"
