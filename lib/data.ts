@@ -1,9 +1,4 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import tkdImg from "@/public/tkd4.jpg";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import departureImg from "@/public/departure.jpg";
 
 export const links = [
@@ -61,21 +56,22 @@ export const experiencesData = [
         date: "Jun 2024 - Present",
     },
     {
-      title: "Energetics/Race Operations System Lead @ Carnegie Mellon Racing",
-      location: "Pittsburgh, PA",
-      description:
-          "Leading a team to build a vehicle alignment rig for 25e to reduce alignment time by over 90%. Designed on a Voltage-Temperature Sense Board for the Low Voltage Battery (24V) for 24e.",
-      icon: {
-          src: "/CMR.png",
-          alt: "Carnegie Mellon Racing logo",
-      },
-      date: "Aug 2023 - Present",
-  },
+        title: "Energetics/Race Operations System Lead @ Carnegie Mellon Racing",
+        location: "Pittsburgh, PA",
+        description:
+            "Leading a team to build a vehicle alignment rig for 25e to reduce alignment time by over 90%. Designed on a Voltage-Temperature Sense Board for the Low Voltage Battery (24V) for 24e.",
+        icon: {
+            src: "/CMR.png",
+            alt: "Carnegie Mellon Racing logo",
+        },
+        date: "Aug 2023 - Present",
+    },
     {
         title: "Student @ Carnegie Mellon University",
         location: "Pittsburgh, PA",
-        description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+        description: `Bachelors of Engineering;
+            Major: Electrical and Computer Engineering;
+            Minor: Robotics`,
         icon: {
             src: "/CMU.jfif",
             alt: "Carnegie Mellon University logo",
@@ -131,4 +127,29 @@ export const skillsData = [
     "Git",
     "Tailwind",
     "SQL",
+] as const;
+
+export const certificatesData = [
+    {
+        title: "Bloomberg Market Concepts",
+        description:
+            "Bloomberg Market Concepts (BMC) is a self-paced, e-learning course that provides an interactive introduction to the financial markets using the power of the Terminal.",
+        icon: {
+            src: "/bloomberg.jpg",
+            alt: "Bloomberg logo",
+        },
+        issueDate: "Jan 2023",
+        href: "https://portal.bloombergforeducation.com/certificates/doXQfxd3HBSHvR5tAgTnRVwm",
+    },
+    {
+        title: "Oracle Certified Associate, Java SE 8 Programmer",
+        description:
+            "The Java SE 8 Oracle Certified Associate (OCA) certification helps you build a foundational understanding of Java, and gaining this certification credential is the first of two steps in demonstrating you have the high-level skills needed to become a professional Java developer.",
+        icon: {
+            src: "/oracle.png",
+            alt: "Oracle logo",
+        },
+        issueDate: "Jul 2021",
+        href: "https://www.credly.com/badges/e58581a0-99d8-45ca-af09-c2517e23b7a6",
+    },
 ] as const;
