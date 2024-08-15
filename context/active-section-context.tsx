@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, createContext, useContext } from "react";
 import { links } from "@/lib/data";
-import exp from "constants";
 
 type ActiveSectionContextProps = {
     children: React.ReactNode;
