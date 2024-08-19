@@ -9,7 +9,7 @@ import Certificate from './certificate';
 
 
 export default function Certificates() {
-    const { ref, inView } = useInView({ threshold: 0.5 });
+    const { ref, inView } = useInView({ threshold: 0.1});
     const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
     useEffect(() => {

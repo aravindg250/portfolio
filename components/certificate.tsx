@@ -13,7 +13,7 @@ export default function Certificate({
     href,
 }: CertificateProps) {
     return (
-        <motion.div className="mb-3 sm:mb-8 last:mb-0 flex flex-row">
+        <motion.div className="mb-3 sm:mb-8 last:mb-0 flex flex-row ">
             <a href={href}>
                 <div className="bg-gray-100 max-w-[48rem] border-black/5 rounded-lg overflow-auto sm:pr-8 relative hover:bg-gray-200 transition">
                     <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[100%] flex flex-col">

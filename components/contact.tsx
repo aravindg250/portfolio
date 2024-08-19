@@ -5,7 +5,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import SectionHeading from "./section-heading";
 
 export default function Contact() {
-    const { ref, inView } = useInView({ threshold: 0.5 });
+    const { ref, inView } = useInView({ threshold: 0.7 });
     const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
     useEffect(() => {
@@ -14,19 +14,20 @@ export default function Contact() {
         }
     }, [inView, setActiveSection, timeOfLastClick]);
     return (
-        <section ref={ref} id="contact">
+        <section ref={ref} id="contact" className="mb-20 sm:mb-28 w-[min(100%,38rem)]">
             <SectionHeading>Contact</SectionHeading>
-            <div>
-                <div className="mb-3 sm:mb-8 last:mb-0 flex flex-row">
-                    <a href="mailto:agunasek@andrew.cmu.edu"></a>
-                    <div className="bg-gray-100 max-w-[48rem] border-black/5 rounded-lg overflow-auto sm:pr-8 relative hover:bg-gray-200 transition">
-                        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[100%] flex flex-col">
-                            <h3 className="text-2xl font-semibold">Email</h3>
-                            <p className="mt-2 leading-relaxed text-gray-700 text-[15px]"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p>
+                Please contact me directly at{" "}
+                <a className="underline" href="mailto:agunasek@andrew.cmu.edu">
+                    agunasek@andrew.cmu.edu
+                </a>{" "}
+                or through this form.
+            </p>
+            <form action="" className="flex flex-col mt-10">
+                <input type="email"className="h-14 rounded-lg border border-black/10"></input>
+                <textarea name="" id="" className=""></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </section>
     );
 }
