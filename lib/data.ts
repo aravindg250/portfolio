@@ -1,6 +1,10 @@
 import tkdImg from "@/public/tkd4.jpg";
 import departureImg from "@/public/departure.jpg";
 
+const line1 = "Bachelors of Engineering";
+const line2 = "Major: Electrical and Computer Engineering";
+const line3 = "Minor: Robotics";
+
 export const links = [
     {
         name: "Home",
@@ -69,9 +73,7 @@ export const experiencesData = [
     {
         title: "Student @ Carnegie Mellon University",
         location: "Pittsburgh, PA",
-        description: `Bachelors of Engineering;
-            Major: Electrical and Computer Engineering;
-            Minor: Robotics`,
+        description: `${line1}\n${line2}\n${line3}`,
         icon: {
             src: "/CMU.jfif",
             alt: "Carnegie Mellon University logo",
