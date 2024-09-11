@@ -1,6 +1,6 @@
 import tkdImg from "@/public/tkd4.jpg";
 import departureImg from "@/public/departure.jpg";
-
+import cmr from "@/public/CMR.png";
 const line1 = "Bachelors of Engineering";
 const line2 = "Major: Electrical and Computer Engineering";
 const line3 = "Minor: Robotics";
@@ -94,6 +94,12 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+    {
+        title: "Driver Heat Map",
+        description: "Developed and deployed a real-time Driver Heat Map system to track braking time, location, and brake temperature with high accuracy. Enhances driver performance by providing insights for targeted training and optimization.",
+        tags: ["Python", "GPS", "Raspberry Pi"],
+        imageURL: cmr,
+    },
     {
         title: "Lane Departure Warning System",
         description:
