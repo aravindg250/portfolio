@@ -38,6 +38,17 @@ export const links = [
 
 export const experiencesData = [
     {
+        title: "Controls Engineer Intern @ Rolls Royce Ltd.",
+        location: "Indianapolis, IN",
+        description:
+            "Developed a MATLAB script to automate the generation of test cases for the Model-in-the-Loop (MIL) simulation of the Full Authority Digital Engine Control (FADEC) system. Enhanced the efficiency of the test case generation process by 50%.",
+        icon: {
+            src: "/rollsRoyce.svg",
+            alt: "Rolls Royce logo",
+        },
+        date: "May 2025 - Aug 2025",   
+    },
+    {
         title: "Software Engineer Intern @ ManageBetter",
         location: "Seattle, WA",
         description:
